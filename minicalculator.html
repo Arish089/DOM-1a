@@ -8,11 +8,31 @@
 <body>
     <input type="number" id ="firstno" placeholder="enter 1st number">
     <input type="number" id="secondno" placeholder="enter 2nd number"><br>
-    <button>Add</button>
-    <button>Subtract</button>
-    <button>Multiply</button>
-    <button>Division</button>
+    <button onclick="clicked1()">Add</button>
+    <button onclick="clicked2()">Subtract</button>
+    <button onclick="clicked3()">Multiply</button>
+    <button onclick="clicked4()">Division</button>
     
 </body>
-<script></script>
+<script>
+    let Firstno = document.getElementById("firstno");
+    let Secondno = document.getElementById("secondno");
+    function clicked1(){
+       let sum = Number(Firstno.value) + Number(Secondno.value);
+       alert(sum);
+    }
+    function clicked2(){
+       let diff = Firstno.value - Secondno.value;
+       alert(diff);
+}
+function clicked3(){
+    let product = Firstno.value * Secondno.value;
+    alert(product);
+
+}
+function clicked4(){
+   let division = Firstno.value / Secondno.value;
+   alert(division);
+}
+</script>
 </html>
